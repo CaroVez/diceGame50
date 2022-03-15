@@ -11,8 +11,8 @@ body {
 #table {
   background: linear-gradient(90deg, rgb(241, 241, 241) 0 50%, white 0 50%); 
   width: 96%;
-  height: 560px;
-  position: relative;
+  height: 96%;
+  position: absolute;
   top: 20px;
   left: 20px;
   display: inline-grid;
@@ -26,8 +26,8 @@ body {
 
 .rules {
   position: absolute;
-  top: 0.4em;
-  left: 0.4em;
+  top: 20px;
+  left: 20px;
 }
 
 .playerOneTitle {
@@ -63,37 +63,37 @@ body {
   color: red;
 }
 .playerOneTitle, .playerTwoTitle {
-  font-size: 38px;
+  font-size: 19px;
 }
 #globalScoreOne, #globalScoreTwo {
-  font-size: 80px;
+  font-size: 40px;
   color: red;
 }
 #textOne, #textTwo {
-  font-size: 20px;
+  font-size: 10px;
 }
 .currentScoreOne, .currentScoreTwo {
   background-color: red;
-  font-size: 14px;
+  font-size: 7px;
   padding: 20px;
   font-weight: bold;
   border-radius: 16px;
 }
 #currentScoreOne, #currentScoreTwo {
   color: white;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: bold;
 }
 #dice {
-  width: 100px;
+  width: 50px;
   box-shadow: 5px 5px 6px black;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 button {
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 12px;
   vertical-align: middle;
 }
 button:hover {
@@ -103,19 +103,182 @@ button:hover {
 .modal-title, .modal-body {
   font-weight: bold;
 }
+.bi {
+  width: 8px;
+  height: 8px;
+}
 
 @media screen and (min-width: 576px) {
-
+  .playerOneTitle, .playerTwoTitle {
+    font-size: 19px;
+  }
+  #globalScoreOne, #globalScoreTwo {
+    font-size: 40px;
+  }
+  #textOne, #textTwo {
+    font-size: 10px;
+  }
+  .currentScoreOne, .currentScoreTwo {
+    font-size: 7px;
+  }
+  #currentScoreOne, #currentScoreTwo {
+    font-size: 12px;
+  }
+  #dice {
+    width: 50px;
+    border-radius: 8px;
+  }
+  button {
+    font-size: 12px;
+  }
+  .bi {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-
+  .playerOneTitle, .playerTwoTitle {
+    font-size: 38px;
+  }
+  #globalScoreOne, #globalScoreTwo {
+    font-size: 80px;
+  }
+  #textOne, #textTwo {
+    font-size: 20px;
+  }
+  .currentScoreOne, .currentScoreTwo {
+    font-size: 14px;
+  }
+  #currentScoreOne, #currentScoreTwo {
+    font-size: 24px;
+  }
+  #dice {
+    width: 100px;
+    border-radius: 16px;
+  }
+  button {
+    font-size: 24px;
+  }
+  .bi {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-
+  .playerOneTitle, .playerTwoTitle {
+    font-size: 57px;
+  }
+  #globalScoreOne, #globalScoreTwo {
+    font-size: 120px;
+  }
+  #textOne, #textTwo {
+    font-size: 30px;
+  }
+  .currentScoreOne, .currentScoreTwo {
+    font-size: 21px;
+  }
+  #currentScoreOne, #currentScoreTwo {
+    font-size: 36px;
+  }
+  #dice {
+    width: 150px;
+    border-radius: 24px;
+  }
+  button {
+    font-size: 36px;
+  }
+  .bi {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-
+  .playerOneTitle, .playerTwoTitle {
+    font-size: 76px;
+  }
+  #globalScoreOne, #globalScoreTwo {
+    font-size: 160px;
+  }
+  #textOne, #textTwo {
+    font-size: 40px;
+  }
+  .currentScoreOne, .currentScoreTwo {
+    font-size: 28px;
+  }
+  #currentScoreOne, #currentScoreTwo {
+    font-size: 48px;
+  }
+  #dice {
+    width: 200px;
+    border-radius: 32px;
+  }
+  button {
+    font-size: 48px;
+  }
+  .bi {
+    width: 32px;
+    height: 32px;
+  }
 }
+
+
+/*
+.playerOneTitle, .playerTwoTitle {
+    font-size: 19px;  
+    font-size: 38px;
+    font-size: 57px;
+    font-size: 76px;
+  }
+  #globalScoreOne, #globalScoreTwo {
+    font-size: 40px;
+    font-size: 80px;
+    font-size: 120px;
+    font-size: 160px;
+  }
+  #textOne, #textTwo {
+    font-size: 10px;
+    font-size: 20px;
+    font-size: 30px;
+    font-size: 40px;
+  }
+  .currentScoreOne, .currentScoreTwo {
+    font-size: 7px;
+    font-size: 14px;
+    font-size: 21px;
+    font-size: 28px;
+  }
+  #currentScoreOne, #currentScoreTwo {
+    font-size: 12px;
+    font-size: 24px;
+    font-size: 36px;
+    font-size: 48px;
+  }
+  #dice {
+    width: 50px;
+    width: 100px;
+    width: 150px;
+    width: 200px;
+    border-radius: 8px;
+    border-radius: 16px;
+    border-radius: 24px;
+    border-radius: 32px;
+  }
+  button {
+    font-size: 12px;
+    font-size: 24px;
+    font-size: 36px;
+    font-size: 48px;
+  }
+  .bi {
+    width: 8px;
+    width: 16px;
+    width: 24px;
+    width: 32px;
+    height: 8px;
+    height: 16px;
+    height: 24px;
+    height: 32px;
+  }
